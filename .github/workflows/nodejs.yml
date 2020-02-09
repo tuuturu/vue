@@ -20,12 +20,19 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
+        registry-url: https://npm.pkg.github.com
+        scope: '@tuuturu'
 
     - run: npm install
-    - run: npm run build-playbook
       env:
         CI: true
         NODE_ENV: production
+        NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    - run: npm run build-storybook
+      env:
+        CI: true
+        NODE_ENV: production
+        NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     - name: GitHub Pages Deploy
       uses: maxheld83/ghpages@v0.2.1
