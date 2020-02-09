@@ -19,7 +19,10 @@ jobs:
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v1
       with:
+        always-auth: true
         node-version: ${{ matrix.node-version }}
+        registry-url: https://npm.pkg.github.com
+        scope: '@tuuturu'
 
     - run: npm install
     - run: npm run build-playbook
