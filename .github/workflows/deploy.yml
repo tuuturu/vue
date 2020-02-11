@@ -31,8 +31,6 @@ jobs:
 
     - run: npm install
       env:
-        CI: true
-        NODE_ENV: production
         NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     - name: Install gulp cli
