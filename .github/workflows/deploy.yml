@@ -18,11 +18,13 @@ jobs:
         node-version: [12.x]
 
     steps:
-    - uses: actions/checkout@v2
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v1
+    - uses: actions/checkout@v1
       with:
-        node-version: ${{ matrix.node-version }}
+        ref: ${{ github.ref }}
+
+    - uses: actions/setup-node@v1
+      with:
+        node-version: '12.x'
         registry-url: https://npm.pkg.github.com
         scope: '@tuuturu'
         persist-credentials: false
@@ -32,6 +34,14 @@ jobs:
         CI: true
         NODE_ENV: production
         NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Build package
+      run: npm run build-package
+    - name: Publish package
+      run: npm publish
+      env:
+        NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
     - run: npm run build-storybook
       env:
         CI: true
