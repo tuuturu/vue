@@ -9,7 +9,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook -o build",
-    "build-package": "gulp"
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
@@ -28,14 +28,13 @@
     "@storybook/addons": "^5.3.12",
     "@storybook/vue": "^5.3.12",
     "@tuuturu/styling": "0.0.4",
-    "delete": "^1.1.0",
-    "gulp": "^4.0.2",
     "babel-loader": "^8.0.6",
     "babel-preset-vue": "^2.0.2",
     "node-sass": "^4.13.1",
     "sass-loader": "^8.0.2",
     "vue": "^2.6.11",
     "vue-loader": "^15.8.3",
-    "vue-template-compiler": "^2.6.11"
+    "vue-template-compiler": "^2.6.11",
+    "webpack": "^4.41.6"
   }
 }
