@@ -31,10 +31,10 @@ jobs:
 
     - run: npm install
       env:
-        CI: true
-        NODE_ENV: production
         NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+    - name: Install gulp cli
+      run: npm install --global gulp-cli
     - name: Build package
       run: npm run build-package
     - name: Publish package
