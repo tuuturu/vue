@@ -28,6 +28,7 @@ jobs:
     - run: make build-storybook
 
   publish:
+    needs: build
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
@@ -61,6 +62,7 @@ jobs:
         FOLDER: build
 
   bump:
+    needs: publish
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
