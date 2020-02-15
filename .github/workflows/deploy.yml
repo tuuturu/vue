@@ -39,10 +39,11 @@ jobs:
         scope: '@tuuturu'
         persist-credentials: false
 
-    - name: Build package
-      run: make build-package
-    - name: Publish package
-      run: make publish
+    - run: npm install
+      env:
+        NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    - run: make build-package
+    - run: make publish
       env:
         NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
