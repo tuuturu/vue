@@ -1,8 +1,10 @@
 
 
-build:
+build-package:
 	@npm run build
 	@cp package.json dist/
+build-storybook:
+    @npm run build-storybook
 
 publish:
     @npm publish dist/
