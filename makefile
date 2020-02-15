@@ -1,4 +1,6 @@
 
+run:
+	npm run storybook
 
 build-package:
 	@npm run build

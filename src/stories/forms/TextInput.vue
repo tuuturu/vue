@@ -1,5 +1,5 @@
 <template>
-	<input type="text" class="TextInput" />
+	<input type="text" class="TextInput" v-on="$listeners" v-bind="$attrs"/>
 </template>
 
 <script>
@@ -8,4 +8,16 @@ export default {
 }
 </script>
 
-<style lang="scss" src="@tuuturu/styling/dist/style.scss" scoped></style>
+<style lang="scss" scoped>
+@import '~@tuuturu/styling/dist/style';
+
+.TextInput {
+	@include clickable();
+
+	padding: 1em;
+
+	border: 3px solid black;
+
+	line-height: 2em;
+}
+</style>
