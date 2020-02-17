@@ -9,10 +9,7 @@
 
 <script>
 export default {
-	name: 'TextInput',
-  mounted() {
-    console.log(this.$listeners)
-  }
+	name: 'TextInput'
 }
 </script>
 
