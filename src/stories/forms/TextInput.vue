@@ -1,10 +1,18 @@
 <template>
-	<input type="text" class="TextInput" v-on="$listeners" v-bind="$attrs"/>
+	<input
+    type="text"
+    class="TextInput"
+    @input="$emit('input', $event.target.value)"
+    v-bind="$attrs"
+  />
 </template>
 
 <script>
 export default {
-	name: 'TextInput'
+	name: 'TextInput',
+  mounted() {
+    console.log(this.$listeners)
+  }
 }
 </script>
 
