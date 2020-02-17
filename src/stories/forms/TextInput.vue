@@ -9,7 +9,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '~@tuuturu/styling/dist/style';
+@import '~@tuuturu/styling/style';
 
 .TextInput {
 	@include clickable();

@@ -15,4 +15,4 @@
   }
 </script>
 
-<style lang="scss" src="@tuuturu/styling/dist/style.scss" scoped></style>
+<style lang="scss" src="@tuuturu/styling/style.scss" scoped></style>
