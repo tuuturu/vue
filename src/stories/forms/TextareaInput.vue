@@ -1,22 +1,25 @@
 <template>
-	<input
-    type="text"
-    class="TextInput"
-    @input="$emit('input', $event.target.value)"
-    v-bind="$attrs"
-  />
+	<textarea
+		class="TextareaInput"
+		:value="value"
+		@input="$emit('input', $event.target.value)"
+		v-bind="$attrs"
+	/>
 </template>
 
 <script>
 export default {
-	name: 'TextInput'
+	name: 'TextareaInput',
+	props: {
+		value: String
+	}
 }
 </script>
 
 <style lang="scss" scoped>
 @import '~@tuuturu/styling/style';
 
-.TextInput {
+.TextareaInput {
 	@include clickable;
 
 	padding: 1em;
