@@ -1,6 +1,11 @@
 
 run:
-	npm run storybook
+	@npm run storybook
+
+link-styling:
+	@npm link @tuuturu/styling || true
+dev:
+	@npm run watch
 
 build-package:
 	@npm run build
@@ -10,6 +15,8 @@ build-storybook:
 
 publish:
 	@npm publish dist/
+publish-locally:
+	@(cd dist/ && npm link)
 
 clean:
 	@rm -rf dist/
