@@ -1,5 +1,10 @@
 <template>
-  <button :class="{ primary, danger, disabled }" class="BaseButton btn" v-bind="$attrs" v-on="$listeners">
+  <button
+    :class="{ primary, danger, disabled }"
+    class="BaseButton btn"
+    v-bind="$attrs"
+    @click="onClick"
+  >
     <slot />
   </button>
 </template>
@@ -11,6 +16,13 @@
       primary: Boolean,
       danger: Boolean,
       disabled: Boolean
+    },
+    methods: {
+      onClick(event) {
+        if (this.disabled) return
+
+        this.$emit('click', event)
+      }
     }
   }
 </script>
