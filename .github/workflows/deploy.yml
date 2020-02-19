@@ -43,6 +43,9 @@ jobs:
       env:
         NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     - run: make build-package
+      env:
+        NODE_ENV: production
+    - run: ls .
     - run: make publish
       env:
         NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
