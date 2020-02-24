@@ -15,3 +15,7 @@ export const standard = () => ({
   },
 });
 
+export const withLabel = () => ({
+  components: { TextInput },
+  template: '<TextInput label="Label" />'
+})
