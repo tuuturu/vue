@@ -9,15 +9,7 @@ export default {
 
 export const primary = () => ({
   components: { BaseButton },
-  template: '<BaseButton primary @click="action">Submit</BaseButton>',
-  methods: {
-    action: action('clicked')
-  },
-});
-
-export const danger = () => ({
-  components: { BaseButton },
-  template: '<BaseButton danger @click="action">Delete</BaseButton>',
+  template: '<BaseButton primary @click="action">Knappetekst</BaseButton>',
   methods: {
     action: action('clicked')
   },
@@ -25,7 +17,7 @@ export const danger = () => ({
 
 export const disabled = () => ({
   components: { BaseButton },
-  template: '<BaseButton disabled @click="action">Submit</BaseButton>',
+  template: '<BaseButton disabled @click="action">Knappetekst</BaseButton>',
   methods: {
     action: action('clicked')
   },
