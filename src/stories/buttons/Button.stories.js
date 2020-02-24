@@ -3,7 +3,7 @@ import { action } from '@storybook/addon-actions';
 import BaseButton from './BaseButton.vue';
 
 export default {
-  title: 'Buttons/Button',
+  title: 'Buttons/BaseButton',
   component: BaseButton,
 };
 
