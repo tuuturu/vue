@@ -40,7 +40,7 @@ const personer = { navn }
   line-height: inherit;
   font-weight: inherit;
   cursor: pointer;
-  padding: 25px;
+  padding: 15px 25px 15px 25px;
 
   &.primary {
     color: white;
