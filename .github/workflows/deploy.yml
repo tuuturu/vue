@@ -21,7 +21,7 @@ jobs:
         scope: '@tuuturu'
         persist-credentials: false
 
-    - run: npm install
+    - run: npm ci
       env:
         NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     - run: make build-package
@@ -39,7 +39,7 @@ jobs:
         scope: '@tuuturu'
         persist-credentials: false
 
-    - run: npm install
+    - run: npm ci
       env:
         NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     - run: make build-package

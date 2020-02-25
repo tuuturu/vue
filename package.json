@@ -22,7 +22,7 @@
   "dependencies": {
     "@tuuturu/styling": "latest",
     "minireset.css": "0.0.6",
-    "styleguide": "git+ssh://git@github.com/oslokommune/styleguide.git#0.35.1"
+    "styleguide": "https://github.com/oslokommune/styleguide.git#0.35.10"
   },
   "devDependencies": {
     "eslint": "^6.8.0",
