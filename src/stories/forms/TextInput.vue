@@ -1,14 +1,16 @@
 <template>
-    <div>
+    <div class="TextInput">
         <label class="label" for="txtInput" v-if="label">
             {{ label }}
         </label>
         <input
-                id="txtInput"
-                type="text"
-                class="TextInput"
-                @input="$emit('input', $event.target.value)"
-                v-bind="$attrs"
+            id="txtInput"
+            type="text"
+            v-on="{
+                ...$listeners,
+                input: event => $emit('input', event.target.value)
+            }"
+            v-bind="$attrs"
         />
     </div>
 </template>
@@ -17,7 +19,7 @@
 export default {
 	name: 'TextInput',
     props: {
-	  label: String
+        label: String
     }
 }
 </script>

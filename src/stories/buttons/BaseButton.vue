@@ -3,34 +3,23 @@
     :class="{ primary, disabled }"
     class="BaseButton"
     v-bind="$attrs"
-    @click="onClick"
+    v-on="{
+      ...$listeners,
+      click: event => { !disabled ? $emit('click', event) : '' }
+    }"
   >
     <slot />
   </button>
 </template>
 
 <script>
-const navn = 'Ingrid'
-
-const personer = { navn }
-
-  export default {
-    name: 'BaseButton',
-    props: {
-      primary: Boolean,
-      disabled: Boolean
-    },
-    mounted() {
-      console.log(this.primary)
-    },
-    methods: {
-      onClick(event) {
-        if (this.disabled) return
-
-        this.$emit('click', event)
-      }
-    }
+export default {
+  name: 'BaseButton',
+  props: {
+    primary: Boolean,
+    disabled: Boolean
   }
+}
 </script>
 <style lang="scss" scoped>
 @import '~@tuuturu/styling/style';

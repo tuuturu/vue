@@ -1,5 +1,5 @@
 <template>
-    <div class="OsloShape">
+    <div class="OsloShape" v-on="$listeners" v-bind="$attrs">
         <OsloAngle v-if="angle" />
         <OsloCircle v-if="circle"/>
         <OsloSquare v-if="square"/>
@@ -17,7 +17,3 @@ export default {
   props: { angle: Boolean, square: Boolean, circle: Boolean }
 }
 </script>
-
-<style scoped>
-
-</style>

@@ -1,5 +1,5 @@
 <template>
-    <div class="Icons">
+    <div class="Icons" v-on="$listeners" v-bind="$attrs">
         <Arrow v-if="arrow" />
         <Expand v-if="expand" />
         <Minimize v-if="minimize" />
@@ -17,7 +17,3 @@ export default {
   props: { arrow: Boolean, expand: Boolean, minimize: Boolean }
 }
 </script>
-
-<style scoped>
-
-</style>
