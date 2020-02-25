@@ -60,8 +60,7 @@ $topbarLinkFontSize: 14px;
 }
 
 .centeredContainer {
-	max-width: 1340px;
-	width: calc(100% - 4rem);
+	width: calc(100% - 8rem);
 	margin: 0 auto;
 }
 

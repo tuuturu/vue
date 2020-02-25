@@ -27,13 +27,12 @@ export default {
 .Footer {
 	border-top: 1px solid $grey;
 	padding-top: 16px;
-	padding-bottom: 54px;
+	padding-bottom: 25px;
 
 	font-size: 16px;
 
 	.centeredContainer {
-		max-width: 1340px;
-		width: calc(100% - 4rem);
+		width: calc(100% - 8rem);
 		margin: 0 auto;
 
 		display: flex;

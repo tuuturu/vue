@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/tuuturu/vue#readme",
   "dependencies": {
-    "@tuuturu/styling": "latest",
+    "@tuuturu/styling": "^0.0.24",
     "minireset.css": "0.0.6",
     "styleguide": "https://github.com/oslokommune/styleguide.git#0.35.10"
   },
