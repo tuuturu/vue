@@ -1,5 +1,5 @@
 <template>
-	<header class="Topbar">
+	<header class="Header">
 		<div class="centeredContainer">
 			<div class="header-contents">
 				<div class="left AppLogo">
@@ -65,7 +65,7 @@ $topbarLinkFontSize: 14px;
 	margin: 0 auto;
 }
 
-.Topbar {
+.Header {
 	flex-shrink: 0;
 	color: black;
 	background-color: white;
