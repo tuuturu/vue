@@ -3,7 +3,9 @@
 		<div class="centeredContainer">
 			<div class="header-contents">
 				<div class="left AppLogo">
-					<span>Tjenesteplattformen</span>
+					<a class="nav-link" href="https://oslokommune.github.io/tp-tjenesteplattform/">
+						<span>Tjenesteplattformen</span>
+					</a>
 				</div>
 				<div class="right">
 					<div class="desktop">
@@ -122,14 +124,17 @@ $topbarLinkFontSize: 14px;
 }
 
 .AppLogo {
-	min-height: 44px;
 	color: inherit;
 	margin: 0;
 	cursor: pointer;
 	text-decoration: none;
 
+	a {
+		border: none;
+	}
+
 	&:hover {
-		text-decoration: underline;
+		//text-decoration: underline;
 	}
 
 	span {
