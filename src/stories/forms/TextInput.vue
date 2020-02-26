@@ -32,12 +32,18 @@ export default {
     margin-bottom: 5px;
 }
 .TextInput {
-	border: 2px solid $blue-dark;
-	line-height: inherit;
-    outline: 0;
-    padding: 10px 10px 10px 13px
-}
-.TextInput:focus {
-    outline: 4px solid $blue-hover;
+    input {
+        min-height: 44px;
+        border: 2px solid $blue-dark;
+        line-height: inherit;
+        outline: 0;
+        padding: 10px 10px 10px 13px;
+
+        font-size: 18pt;
+        font-weight: 300;
+    }
+    input:focus {
+        outline: 4px solid $blue-hover;
+    }
 }
 </style>

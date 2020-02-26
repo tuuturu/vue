@@ -25,9 +25,12 @@ export default {
 @import '~@tuuturu/styling/style';
 
 .BaseButton {
-  font-size: inherit;
+  min-height: 68px;
+
+  font-size: 18pt;
+  font-weight: 300;
+
   line-height: inherit;
-  font-weight: inherit;
   cursor: pointer;
   padding: 15px 25px 15px 25px;
 
