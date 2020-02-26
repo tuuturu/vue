@@ -25,7 +25,7 @@ export default {
 @import '~@tuuturu/styling/style';
 
 .BaseButton {
-  min-height: 68px;
+  min-height: 2.6em;
 
   font-size: 18pt;
   font-weight: 300;

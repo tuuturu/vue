@@ -33,7 +33,8 @@ export default {
 }
 .TextInput {
     input {
-        min-height: 44px;
+        min-height: 2.6em;
+
         border: 2px solid $blue-dark;
         line-height: inherit;
         outline: 0;
