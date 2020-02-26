@@ -7,20 +7,25 @@
 				</div>
 				<div class="right">
 					<div class="desktop">
-						<router-link class="nav-link" :class="{ 'nav-link-active': isActive() }" to="javascript:void(0)">
+						<a class="nav-link" :class="{ 'nav-link-active': isActive() }" href="https://oslokommune.github.io/tp-dataplattform/">
 							Dataplattform
-						</router-link>
-						<router-link class="nav-link" :class="{ 'nav-link-active': isActive() }" to="javascript:void(0)">
+						</a>
+						<a class="nav-link" :class="{ 'nav-link-active': isActive() }" href="https://oslokommune.github.io/tp-informasjonsforvaltning/">
 							Informasjonsforvaltning
-						</router-link>
-						<router-link class="nav-link" :class="{ 'nav-link-active': isActive() }" to="javascript:void(0)">
+						</a>
+						<a class="nav-link" :class="{ 'nav-link-active': isActive() }" href="https://oslokommune.github.io/tp-infrastruktur/">
 							Infrastruktur
-						</router-link>
-						<router-link class="nav-link" :class="{ 'nav-link-active': isActive() }" to="javascript:void(0)">
+						</a>
+						<a class="nav-link" :class="{ 'nav-link-active': isActive() }" href="https://oslokommune.github.io/tp-plattform/">
 							Plattform
-						</router-link>
-						<router-link class="nav-link" :class="{ 'nav-link-active': isActive() }" to="'javascript:void(0)'">
+						</a>
+						<a class="nav-link" :class="{ 'nav-link-active': isActive() }" href="https://oslokommune.github.io/tp-utviklerportalen/">
 							Utviklerportalen
+						</a>
+						<router-link class="nav-link" to="/help">
+							<span style="color: red;">⁉️ </span>
+							️Hjelp
+							<span style="color: red;">⁉️ </span>
 						</router-link>
 					</div>
 				</div>
@@ -49,8 +54,20 @@ export default {
 @import '~@tuuturu/styling/style';
 $topbarLinkFontSize: 14px;
 
+.nav-link {
+	color: $blue-dark;
+	font-family: "Oslo Sans", sans-serif;
+	cursor: pointer;
+	text-decoration: none;
+	&:focus, &:hover, &:active, &:visited {
+		color: $blue-hover;
+		text-decoration: none;
+		border-bottom: 2px solid $blue-hover;
+	}
+}
+
 .nav-link:hover {
-	border-bottom: 3px solid $blue;
+	border-bottom: 3px solid $blue !important;
 	margin-bottom: -3px;
 }
 
