@@ -13,21 +13,13 @@ export default {
 <style lang="scss" scoped>
 
 .TestButton {
-
-    background-color: hotpink;
+    background-color: #545975;
     padding: 1em;
-
     font-weight: bold;
     font-size: large;
-
-    border: 3px solid hotpink;
     cursor: pointer;
-
-    &:hover {
-        color: white;
-        border: 3px solid mediumpurple;
-        background-color: mediumpurple;
-    }
+    color: white;
+    min-width: 750px;
 }
 
 </style>
