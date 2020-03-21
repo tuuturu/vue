@@ -20,7 +20,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
 .Button {
 	background-color: #545975;
 	padding: 1em;
@@ -28,7 +27,6 @@ export default {
 	font-size: large;
 	cursor: pointer;
 	color: white;
-	min-width: 750px;
 
 	border: 2px solid #545975;
 	border-radius: 4px;
@@ -43,5 +41,4 @@ export default {
 		border-color: #BC4148;
 	}
 }
-
 </style>
