@@ -9,7 +9,8 @@ module.exports = {
 
 	entry: {
 		buttons: './buttons/index.js',
-		forms: './forms/index.js'
+		forms: './forms/index.js',
+		icons: './icons/index.js'
 	},
 
 	output: {
