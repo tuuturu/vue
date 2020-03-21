@@ -1,10 +1,7 @@
-import { default as BaseButtonModule } from '~/stories/buttons/BaseButton'
-import { default as TestButtonModule } from '~/stories/buttons/TestButton'
+import ButtonModule from '~/stories/buttons/Button'
 
-export const BaseButton = BaseButtonModule
-export const TestButton = TestButtonModule
+export const Button = ButtonModule
 
 export default {
-	BaseButton,
-	TestButton
+	Button
 }
