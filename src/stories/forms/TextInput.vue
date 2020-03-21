@@ -21,7 +21,8 @@ export default {
 
 	padding: 1em;
 
-	border: 3px solid $black;
+	border: $border-width solid $primary-color;
+	border-radius: $border-radius;
 
 	line-height: 2em;
 }

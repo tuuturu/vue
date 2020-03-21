@@ -20,25 +20,27 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '~@tuuturu/styling/style';
+
 .Button {
-	background-color: #545975;
+	background-color: $primary-color;
 	padding: 1em;
 	font-weight: bold;
 	font-size: large;
 	cursor: pointer;
 	color: white;
 
-	border: 2px solid #545975;
-	border-radius: 4px;
+	border: $border-width solid $primary-color;
+	border-radius: $border-radius;
 
 	&.secondary {
 		background-color: transparent;
-		color: #545975;
+		color: $primary-color;
 	}
 
 	&.danger {
-		background-color: #BC4148;
-		border-color: #BC4148;
+		background-color: $red;
+		border-color: $red;
 	}
 }
 </style>
