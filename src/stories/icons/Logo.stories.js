@@ -1,11 +1,11 @@
-import Logo from './Logo.vue'
+import IconLogo from './IconLogo.vue'
 
 export default {
-  title: 'Icons/Logo',
-  component: Logo
+  title: 'Icon/Logo',
+  component: IconLogo
 }
 
 export const primary = () => ({
-  components: { Logo },
-  template: '<Logo></Logo>'
+  components: { IconLogo },
+  template: '<IconLogo style="width: 128px; height: 128px;"></IconLogo>'
 });

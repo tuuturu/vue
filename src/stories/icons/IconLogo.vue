@@ -1,5 +1,5 @@
 <template>
-		<svg class="Logo" width="896px" height="854px" viewBox="0 0 896 854" version="1.1" xmlns="http://www.w3.org/2000/svg">
+		<svg class="IconLogo" width="896px" height="854px" viewBox="0 0 896 854" version="1.1" xmlns="http://www.w3.org/2000/svg">
 				<title>{{ alt }}</title>
 				<desc>Created with Sketch.</desc>
 				<g id="SplashScreen" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -18,7 +18,7 @@
 
 <script>
 export default {
-	name: "SplashScreen.vue",
+	name: "IconLogo",
 	props: {
 		alt: {
 			type: String,
@@ -27,7 +27,3 @@ export default {
 	}
 }
 </script>
-
-<style scoped>
-
-</style>
