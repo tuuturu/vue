@@ -14,3 +14,19 @@ export const standard = () => ({
     action: action('clicked')
   },
 });
+
+export const secondary = () => ({
+  components: { Button },
+  template: '<Button secondary @click="action">Submit</Button>',
+  methods: {
+    action: action('clicked')
+  },
+});
+
+export const danger = () => ({
+  components: { Button },
+  template: '<Button danger @click="action">Submit</Button>',
+  methods: {
+    action: action('clicked')
+  },
+});
